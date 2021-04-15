@@ -1,12 +1,53 @@
 <h1>Hello, my name is Diana</h1>
 <p>I work at Industronic</p>
 
+<br/>
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h3 class="panel-title"><%= link_to 'Click here to generate a new super hero', root_path %></h3>
+    <h3 class="panel-title gray"><%= link_to 'Click here to generate a new super hero', root_path %></h3>
   </div>
   <div class="panel-body">
-    Panel content
+
+  	<div class="row">
+  		<br/>
+  		<div class="col-md-4">
+  			<img scr = "dc.png" alt="aimage" width="350" height="300">
+  			<br/><br/>
+  		</div>
+
+  		<div class="col-md-4">
+
+	  		<h3>Superhero:<br/>
+	  			<span class="red"> <%= @hero_hero %> <br/> </span>
+	  		</h3>
+
+	    	<h3>But in real life you are:<br/>
+	     		<span class="red"> <%= @hero_name %><br/></span>
+	     	</h3>
+
+		    <h3>And your girlfriend:<br/>
+		    	<span class="red"> <%= @hero_power %> <br/> <br/></span>
+		    </h3> <br/>
+
+		    <h4> Your villian is:<br/>
+		     	<span class="corp_red"> <%= @hero_villian %><br/></span>
+		     </h4>
+		    <h4> You are a:<br/>
+		     	<span class="corp_red"> <%= @hero_house %><br/></span>
+		     <h4>
+
+		    <h4> Your undercover day job is: <br/>
+		    	<span class="corp_red"> <%= @corp_power%> </span>
+
+		    <h4>
+		 </div>
+		<div class="col-md-4">
+  			<!-- put add code -->
+  		</div>
+  		<br/><br/>
+    
+
+    </div>
   </div>
 
   <div class="panel-footer"><%= link_to 'Create a whole superhero team' ,home_team_path %> </div>
