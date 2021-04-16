@@ -20,6 +20,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 
+
 gem 'faker', '~> 2.17'
 
 group :production do
