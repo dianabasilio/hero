@@ -1,0 +1,55 @@
+<% @team_number.times do %>
+
+
+
+	<div class="col-md-4">
+	  	<br/><br/>
+	  	<figure class= "figure">
+
+	  			<img src="https://canalhistoria.es/wp-content/uploads/2017/07/dc-comics.jpg" alt="image" width="300" height="335" class= "figure-img img-fluid rounded">
+	  	</figure>
+	  					
+					
+	  		</div>
+
+	  		<div class="col-md-4">
+
+		  		<h3>Superhero:<br/>
+		  			<span class="red"> <%= Faker::DcComics.hero %> <br/> </span>
+		  		</h3>
+
+		    	<h3>But in real life you are:<br/>
+		     		<span class="red"> <%= Faker::DcComics.name %><br/></span>
+		     	</h3>
+
+			    <h3>And your girlfriend:<br/>
+			    	<span class="red"> <%= Faker::DcComics.heroine %> <br/> <br/></span>
+			    </h3> 
+
+			    <h4> Your villian is:<br/>
+			     	<span class="corp_red"> <%= Faker::DcComics.villain %><br/></span>
+			     </h4>
+			    <h4> You are a:<br/>
+			     	<span class="corp_red"> <%= Faker::Movies::HarryPotter.house %><br/></span>
+			     <h4>
+
+			    <h4> Your undercover day job is: <br/>
+			    	<span class="corp_red"> <%= Faker::Job.title%> </span><br/>
+
+			    <h4>
+			    	
+			 </div>
+			<div class="col-md-4">
+	  			<!-- put add code -->
+	  		</div>
+	  		<br/><br/>
+
+	  <div class = "row">
+	  	<div class = "col-md-12">
+	  		<hr>
+	  	</div>
+
+	  </div>
+
+
+<% end %>
